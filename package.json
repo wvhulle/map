@@ -1,0 +1,62 @@
+{
+	"types": "dist/index.d.ts",
+	"author": "Willem Vanhulle <willem.vanhulle@inbiose.com>",
+	"dependencies": {
+		"@wvhulle/object": "^0.0.2",
+		"@wvhulle/reactive": "^0.0.2",
+		"@wvhulle/serializable": "^0.0.1",
+		"lodash-es": "^4.17.21"
+	},
+	"description": "Contains reactive graphs and hashmaps.",
+	"devDependencies": {
+		"@biomejs/biome": "1.8.2",
+		"@types/lodash-es": "^4.17.12",
+		"@vitest/coverage-istanbul": "^1.6.0",
+		"@wvhulle/tsconfig": "^0.0.1",
+		"fast-check": "3.19.0",
+		"publint": "^0.2.8",
+		"tsc-alias": "^1.8.10",
+		"typescript": "^5.5.2",
+		"vite-tsconfig-paths": "^4.3.2",
+		"vitest": "^1.6.0"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*",
+		"./lib",
+		"tsconfig.json"
+	],
+	"keywords": [
+		"data-structure",
+		"iterable",
+		"list",
+		"hashmap",
+		"reactive",
+		"Svelte",
+		"RxJS"
+	],
+	"license": "GPL-3.0-only",
+	"name": "@wvhulle/map",
+	"pnpm": {
+		"overrides": {
+			"fast-check": "3.10.0"
+		}
+	},
+	"repository": "https://github.com/wvhulle/map",
+	"scripts": {
+		"build": "tsc && tsc-alias",
+		"coverage": "vitest run --coverage --passWithNoTests",
+		"biome": "biome check --write ./lib",
+		"prepublishOnly": "npm run test && npm run build && publint",
+		"test": "vitest --coverage --passWithNoTests run"
+	},
+	"type": "module",
+	"version": "0.0.1"
+}

@@ -1,0 +1,20 @@
+{
+	"recommendations": [
+		"nicoespeon.abracadabra",
+		"joshbolduc.commitlint",
+		"gitlab.gitlab-workflow",
+		"wix.vscode-import-cost",
+		"christian-kohler.npm-intellisense",
+		"trabpukcip.vscode-npm-scripts",
+		"christian-kohler.path-intellisense",
+		"idered.npm",
+		"gruntfuggly.todo-tree",
+		"waderyan.gitblame",
+		"streetsidesoftware.code-spell-checker",
+		"genieai.chatgpt-vscode",
+		"visualstudioexptteam.vscodeintellicode-completions",
+		"yzhang.markdown-all-in-one",
+		"ms-vscode.vscode-typescript-next",
+		"dbaeumer.vscode-eslint"
+	]
+}
