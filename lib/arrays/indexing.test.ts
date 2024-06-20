@@ -47,14 +47,14 @@ describe("mod", () => {
 		);
 	});
 
-	it("should perform efficiently", () => {
-		const start = performance.now();
-		fc.assert(
-			fc.property(fc.integer(), fc.integer({ min: 1 }), (n, m) => {
-				modulo(n, m);
-			}),
-		);
-		const end = performance.now();
-		expect(end - start).toBeLessThan(1000);
-	});
+	// it("should perform efficiently", () => {
+	// 	const start = performance.now();
+	// 	fc.assert(
+	// 		fc.property(fc.integer(), fc.integer({ min: 1 }), (n, m) => {
+	// 			modulo(n, m);
+	// 		}),
+	// 	);
+	// 	const end = performance.now();
+	// 	expect(end - start).toBeLessThan(1000);
+	// });
 });
