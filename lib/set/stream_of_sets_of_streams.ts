@@ -85,7 +85,7 @@ export class Stream_of_Sets_of_Streams<
 								inserted_content,
 							);
 							if (!this.are_equivalent_content(internal_content, merged)) {
-								throw new Error(`Merged data is not equivalent.`);
+								throw new Error("Merged data is not equivalent.");
 							}
 
 							n1.set(merged);

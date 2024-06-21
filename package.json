@@ -7,7 +7,7 @@
 		"@wvhulle/serializable": "^0.0.1",
 		"lodash-es": "^4.17.21"
 	},
-	"description": "Contains reactive graphs and hashmaps.",
+	"description": "Reactive graphs and hashmaps.",
 	"devDependencies": {
 		"@biomejs/biome": "1.8.2",
 		"@types/lodash-es": "^4.17.12",
@@ -58,5 +58,5 @@
 		"test": "vitest --coverage --passWithNoTests run"
 	},
 	"type": "module",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
